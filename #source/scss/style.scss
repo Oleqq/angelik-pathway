@@ -2,4 +2,29 @@
 @import "normalize.scss";
 @import "modules/variables.scss";
 @import "modules/custom.scss";
-@import "modules/animation.scss";
+
+
+// Header
+@import "modules/header";
+
+// Footer
+@import "modules/footer";
+
+
+
+
+
+// hero
+.hero {
+
+    &__wrapper {
+
+    }
+    &__title {
+
+    }
+    &__subtitle {
+
+    }
+    
+}
