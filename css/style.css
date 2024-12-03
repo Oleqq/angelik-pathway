@@ -404,4 +404,8 @@ html {
     max-width: 1860px;
   }
 }
+
+.container {
+  margin: 0 auto;
+}
 /*# sourceMappingURL=style.css.map */
