@@ -1,0 +1,66 @@
+/* Styles for the Header Section */
+.header {
+    /* Navigation */
+    &__nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #fff;
+      border-bottom: 1px solid #ddd;
+    }
+  
+    /* Menu styling */
+    &__menu {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+  
+      .header__item {
+        font-size: 1rem;
+        font-weight: bold;
+  
+        .header__link {
+          text-decoration: none;
+          color: #333;
+          transition: color 0.3s ease;
+  
+          &:hover {
+            color: #007bff;
+          }
+        }
+      }
+    }
+  
+    /* Logo styling */
+    &__logo {
+      img {
+        width: 230px;
+        height: auto;
+      }
+    }
+  
+    /* Buttons in header */
+    &__buttons {
+      display: flex;
+      gap: 1rem;
+  
+      a {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+  
+        img {
+          width: 100%;
+          height: auto;
+        }
+  
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+  

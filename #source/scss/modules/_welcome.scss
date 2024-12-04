@@ -1,0 +1,82 @@
+/* Styles for the Welcome Section */
+.welcome {
+    /* Container */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 15px;
+    }
+  
+    /* Wrapper for content */
+    &__wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 2rem;
+    }
+  
+    /* Info block */
+    &__info {
+      flex: 1;
+      text-align: center;
+  
+      /* Logo styling */
+      .welcome__logo {
+        margin-bottom: 1rem;
+  
+        img {
+          width: 130px;
+          height: 150px;
+          object-fit: contain;
+        }
+      }
+  
+      /* Title styling */
+      .weclome__title {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+      }
+  
+      /* Subtitle styling */
+      .welcome__subtitle {
+        font-size: 1rem;
+        color: #666;
+        line-height: 1.6;
+      }
+    }
+  
+    /* Path block */
+    &__path {
+      flex: 1;
+      text-align: center;
+  
+      /* Background styling */
+      .welcome__bg {
+        margin-bottom: 1rem;
+  
+        img {
+          width: 100%;
+          height: auto;
+          border-radius: 10px;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+      }
+  
+      /* Title styling */
+      h3 {
+        font-size: 1.8rem;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+      }
+  
+      /* Text styling */
+      p {
+        font-size: 1rem;
+        color: #666;
+        line-height: 1.6;
+      }
+    }
+  }
+  

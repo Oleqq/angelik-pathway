@@ -1,0 +1,91 @@
+/* Styles for the Hero Section */
+.hero {
+    /* Wrapper for hero content */
+    &__wrapper {
+      position: relative;
+      text-align: center;
+      padding: 4rem 1rem;
+    }
+  
+    /* Title styling */
+    &__title {
+      font-size: 3rem;
+      font-weight: bold;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+  
+      br {
+        display: block;
+      }
+    }
+  
+    /* Subtitle styling */
+    &__subtitle {
+      font-size: 1.25rem;
+      color: #666;
+      margin-bottom: 2rem;
+    }
+  
+    /* Background image styling */
+    &__bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+  
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  
+    /* Main image styling */
+    &__img {
+      margin: 0 auto;
+      max-width: 430px;
+      height: auto;
+  
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  
+    /* Star elements */
+    &__star-1,
+    &__star-2,
+    &__star-3 {
+      position: absolute;
+  
+      /* Position for each star */
+      &.hero__star-1 {
+        top: 10%;
+        left: 15%;
+        width: 70px;
+        height: 70px;
+      }
+  
+      &.hero__star-2 {
+        top: 50%;
+        right: 20%;
+        width: 32px;
+        height: 32px;
+      }
+  
+      &.hero__star-3 {
+        bottom: 15%;
+        left: 10%;
+        width: 70px;
+        height: 70px;
+      }
+  
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+  

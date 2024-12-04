@@ -1,14 +1,12 @@
 @import "fonts.scss";
 @import "normalize.scss";
-@import "modules/variables.scss";
-@import "modules/custom.scss";
 
+// ~~~ General ~~~
+@import "general.scss";
 
-// Header
+// ~~~ Header ~~~
 @import "modules/header";
 
-// Footer
-@import "modules/footer";
 
 
 
@@ -17,20 +15,32 @@
     margin: 0 auto;
 }
 
+// Hero
+@import "modules/hero";
+
+// Welcome
+@import "modules/welcome";
+
+// Featured
+@import "modules/featured";
+
+// Title Banner
+@import "modules/title-banner";
+
+// About us
+@import "modules/about";
+
+// Our Values
+@import "modules/our-values";
+
+// Cta Contact
+@import "modules/cta-secondary";
+
+// Cta Primary
+@import "modules/cta-primary";
 
 
-// hero
-.hero {
 
-    &__wrapper {
 
-    }
-
-    &__title {
-
-    }
-    &__subtitle {
-
-    }
-    
-}
+// ~~~ Footer ~~~
+@import "modules/footer";

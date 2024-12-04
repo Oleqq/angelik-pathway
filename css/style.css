@@ -405,7 +405,534 @@ html {
   }
 }
 
+/* Styles for the Header Section */
+.header {
+  /* Navigation */
+  /* Menu styling */
+  /* Logo styling */
+  /* Buttons in header */
+}
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+.header__menu {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.header__menu .header__item {
+  font-size: 1rem;
+  font-weight: bold;
+}
+.header__menu .header__item .header__link {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease;
+}
+.header__menu .header__item .header__link:hover {
+  color: #007bff;
+}
+.header__logo img {
+  width: 230px;
+  height: auto;
+}
+.header__buttons {
+  display: flex;
+  gap: 1rem;
+}
+.header__buttons a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+}
+.header__buttons a img {
+  width: 100%;
+  height: auto;
+}
+.header__buttons a:hover {
+  opacity: 0.8;
+}
+
 .container {
   margin: 0 auto;
+}
+
+/* Styles for the Hero Section */
+.hero {
+  /* Wrapper for hero content */
+  /* Title styling */
+  /* Subtitle styling */
+  /* Background image styling */
+  /* Main image styling */
+  /* Star elements */
+}
+.hero__wrapper {
+  position: relative;
+  text-align: center;
+  padding: 4rem 1rem;
+}
+.hero__title {
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+.hero__title br {
+  display: block;
+}
+.hero__subtitle {
+  font-size: 1.25rem;
+  color: #666;
+  margin-bottom: 2rem;
+}
+.hero__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.hero__bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hero__img {
+  margin: 0 auto;
+  max-width: 430px;
+  height: auto;
+}
+.hero__img img {
+  width: 100%;
+  height: auto;
+}
+.hero__star-1, .hero__star-2, .hero__star-3 {
+  position: absolute;
+  /* Position for each star */
+}
+.hero__star-1.hero__star-1, .hero__star-2.hero__star-1, .hero__star-3.hero__star-1 {
+  top: 10%;
+  left: 15%;
+  width: 70px;
+  height: 70px;
+}
+.hero__star-1.hero__star-2, .hero__star-2.hero__star-2, .hero__star-3.hero__star-2 {
+  top: 50%;
+  right: 20%;
+  width: 32px;
+  height: 32px;
+}
+.hero__star-1.hero__star-3, .hero__star-2.hero__star-3, .hero__star-3.hero__star-3 {
+  bottom: 15%;
+  left: 10%;
+  width: 70px;
+  height: 70px;
+}
+.hero__star-1 img, .hero__star-2 img, .hero__star-3 img {
+  width: 100%;
+  height: auto;
+}
+
+/* Styles for the Welcome Section */
+.welcome {
+  /* Container */
+  /* Wrapper for content */
+  /* Info block */
+  /* Path block */
+}
+.welcome .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.welcome__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+.welcome__info {
+  flex: 1;
+  text-align: center;
+  /* Logo styling */
+  /* Title styling */
+  /* Subtitle styling */
+}
+.welcome__info .welcome__logo {
+  margin-bottom: 1rem;
+}
+.welcome__info .welcome__logo img {
+  width: 130px;
+  height: 150px;
+  object-fit: contain;
+}
+.welcome__info .weclome__title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.welcome__info .welcome__subtitle {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+}
+.welcome__path {
+  flex: 1;
+  text-align: center;
+  /* Background styling */
+  /* Title styling */
+  /* Text styling */
+}
+.welcome__path .welcome__bg {
+  margin-bottom: 1rem;
+}
+.welcome__path .welcome__bg img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.welcome__path h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.welcome__path p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Styles for the Featured Section */
+.featured {
+  /* Container */
+  /* Wrapper for content */
+}
+.featured .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.featured__wrapper {
+  text-align: center;
+  padding: 2rem 0;
+  /* Title styling */
+  /* Subtitle styling */
+  /* Main image styling */
+  /* Stars styling */
+}
+.featured__wrapper .featured__title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.featured__wrapper .featured__title strong {
+  font-weight: 900;
+}
+.featured__wrapper .featured__subtitle {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 2rem;
+}
+.featured__wrapper .featured__img {
+  display: block;
+  margin: 2rem auto;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.featured__wrapper .featured__star-1,
+.featured__wrapper .featured__star-2 {
+  position: relative;
+  display: inline-block;
+  margin: 1rem;
+}
+.featured__wrapper .featured__star-1.featured__star-1,
+.featured__wrapper .featured__star-2.featured__star-1 {
+  width: 70px;
+  height: 70px;
+}
+.featured__wrapper .featured__star-1.featured__star-2,
+.featured__wrapper .featured__star-2.featured__star-2 {
+  width: 32px;
+  height: 32px;
+}
+
+/* Styles for the Title Banner Section */
+.title-banner {
+  /* Container */
+  /* Wrapper for content */
+}
+.title-banner .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.title-banner__wrapper {
+  text-align: center;
+  padding: 2rem 0;
+}
+.title-banner__wrapper .title-banner__title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  line-height: 1.4;
+  quotes: '" "';
+}
+
+/* Styles for the About Us Section */
+.about-us {
+  /* Container */
+  /* Wrapper for content */
+  /* Top section */
+  /* Bottom section */
+}
+.about-us .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.about-us__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.about-us__top {
+  text-align: center;
+}
+.about-us__top .section__title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.about-us__top .section__title strong {
+  font-weight: 900;
+}
+.about-us__top .section__subtitle {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.5;
+}
+.about-us__bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.about-us__bottom .about-us__product-card {
+  flex: 1 1 calc(33.333% - 1rem);
+  max-width: 275px;
+  text-align: center;
+}
+.about-us__bottom .about-us__product-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for the Our Values Section */
+.our-values {
+  /* Container */
+  /* Wrapper for steps */
+  /* Individual step */
+  /* Step divider */
+}
+.our-values .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  /* Title styling */
+}
+.our-values .container .our-values__title {
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+.our-values__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.our-values__step {
+  flex: 1 1 calc(33.333% - 1rem);
+  text-align: center;
+}
+.our-values__step h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.our-values__step p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.5;
+}
+.our-values__step-divider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.our-values__step-divider div {
+  width: 50px;
+  height: 2px;
+  background-color: #ccc;
+}
+
+/* Styles for the CTA Secondary Section */
+.cta-secondary {
+  /* Container */
+  /* Wrapper for content */
+}
+.cta-secondary .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.cta-secondary__wrapper {
+  text-align: center;
+  margin: 2rem 0;
+  /* Title styling */
+  /* Subtitle styling */
+  /* Form block */
+}
+.cta-secondary__wrapper .cta-secondary__title {
+  font-size: 2rem;
+  line-height: 1.4;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.cta-secondary__wrapper .cta-secondary__title strong {
+  font-weight: 900;
+}
+.cta-secondary__wrapper .cta-secondary__subtitle {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 2rem;
+}
+.cta-secondary__wrapper .cta-secondary__form {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.cta-secondary__wrapper .cta-secondary__form input[type=email] {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  width: 300px;
+}
+.cta-secondary__wrapper .cta-secondary__form input[type=email]::placeholder {
+  color: #aaa;
+}
+.cta-secondary__wrapper .cta-secondary__form button {
+  padding: 0.75rem 1.5rem;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.cta-secondary__wrapper .cta-secondary__form button:hover {
+  background-color: #0056b3;
+}
+
+/* Styles for the CTA Primary Section */
+.cta-primary {
+  /* Container */
+  /* Wrapper for content */
+  /* Info block */
+  /* Form block */
+}
+.cta-primary .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.cta-primary__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.cta-primary__info {
+  flex: 1;
+  /* Title styling */
+  /* Subtitle styling */
+  /* Star image styling */
+}
+.cta-primary__info .cta-primary__title {
+  font-size: 2rem;
+  line-height: 1.2;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.cta-primary__info .cta-primary__title strong {
+  font-weight: 900;
+}
+.cta-primary__info .cta-primary__subtitle {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+.cta-primary__info .cta-primary__star {
+  display: block;
+  width: 70px;
+  height: 70px;
+  margin-top: 1rem;
+}
+.cta-primary__form {
+  flex: 1;
+  /* Top section of the form */
+  /* Message input styling */
+  /* Submit button styling */
+}
+.cta-primary__form--top {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.cta-primary__form--top input {
+  flex: 1;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+.cta-primary__form--top input::placeholder {
+  color: #aaa;
+}
+.cta-primary__form input[type=text] {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.cta-primary__form button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.cta-primary__form button:hover {
+  background-color: #0056b3;
 }
 /*# sourceMappingURL=style.css.map */
