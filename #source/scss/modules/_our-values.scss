@@ -1,5 +1,7 @@
 /* Styles for the Our Values Section */
 .our-values {
+    margin: 100px 0;
+
     /* Container */
     .container {
       max-width: 1200px;
@@ -18,9 +20,13 @@
     /* Wrapper for steps */
     &__wrapper {
       display: flex;
-      flex-wrap: wrap;
+      
       justify-content: space-between;
       gap: 2rem;
+
+      @media (max-width:767px) {
+        flex-wrap: wrap;
+      }
     }
   
     /* Individual step */
@@ -40,12 +46,18 @@
         line-height: 1.5;
       }
     }
-  
+    
     /* Step divider */
     &__step-divider {
       display: flex;
       justify-content: center;
       align-items: center;
+
+      &--2 {
+        @media (max-width:767px) {
+          display: none;
+        }
+      }
   
       div {
         width: 50px;

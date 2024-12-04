@@ -1,5 +1,8 @@
 /* Styles for the About Us Section */
 .about-us {
+  margin: 100px 0;
+  padding: 100px 0;
+
     /* Container */
     .container {
       max-width: 1200px;
@@ -41,12 +44,25 @@
       flex-wrap: wrap;
       justify-content: center;
       gap: 1.5rem;
-  
+
+      @media (max-width:767px) {
+        flex-direction: column;
+        align-items: center;
+      }
+
+     
       .about-us__product-card {
         flex: 1 1 calc(33.333% - 1rem);
         max-width: 275px;
         text-align: center;
   
+        @media (min-width:768px) {
+          &:nth-child(2) {
+            transform: translateY(80px);
+          }
+        }
+    
+
         img {
           width: 100%;
           height: auto;

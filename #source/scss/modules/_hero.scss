@@ -1,10 +1,21 @@
 /* Styles for the Hero Section */
 .hero {
+  height: calc(100vh - 180px);
+
+    // container
+    .container {
+      height: 100%;
+    }
+
     /* Wrapper for hero content */
     &__wrapper {
       position: relative;
       text-align: center;
-      padding: 4rem 1rem;
+      
+      height: 100%;
+
+      display: flex;
+      justify-content: space-between;
     }
   
     /* Title styling */
@@ -13,6 +24,8 @@
       font-weight: bold;
       line-height: 1.2;
       margin-bottom: 1rem;
+
+      display: flex;
   
       br {
         display: block;
@@ -24,6 +37,12 @@
       font-size: 1.25rem;
       color: #666;
       margin-bottom: 2rem;
+      
+      display: flex;
+      align-items: flex-end;
+
+      max-width: 270px;
+      text-align: left;
     }
   
     /* Background image styling */
@@ -47,6 +66,11 @@
       margin: 0 auto;
       max-width: 430px;
       height: auto;
+      position: absolute;
+
+      left: 0;
+      right: 0;
+      top: 25%;
   
       img {
         width: 100%;

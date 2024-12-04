@@ -427,6 +427,11 @@ html {
   margin: 0;
   padding: 0;
 }
+@media (max-width: 767px) {
+  .header__menu {
+    display: none;
+  }
+}
 .header__menu .header__item {
   font-size: 1rem;
   font-weight: bold;
@@ -439,9 +444,17 @@ html {
 .header__menu .header__item .header__link:hover {
   color: #007bff;
 }
+.header__logo {
+  display: flex;
+}
 .header__logo img {
   width: 230px;
   height: auto;
+}
+@media (max-width: 467px) {
+  .header__logo img {
+    width: 180px;
+  }
 }
 .header__buttons {
   display: flex;
@@ -466,6 +479,7 @@ html {
 
 /* Styles for the Hero Section */
 .hero {
+  height: calc(100vh - 180px);
   /* Wrapper for hero content */
   /* Title styling */
   /* Subtitle styling */
@@ -473,16 +487,22 @@ html {
   /* Main image styling */
   /* Star elements */
 }
+.hero .container {
+  height: 100%;
+}
 .hero__wrapper {
   position: relative;
   text-align: center;
-  padding: 4rem 1rem;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 .hero__title {
   font-size: 3rem;
   font-weight: bold;
   line-height: 1.2;
   margin-bottom: 1rem;
+  display: flex;
 }
 .hero__title br {
   display: block;
@@ -491,6 +511,10 @@ html {
   font-size: 1.25rem;
   color: #666;
   margin-bottom: 2rem;
+  display: flex;
+  align-items: flex-end;
+  max-width: 270px;
+  text-align: left;
 }
 .hero__bg {
   position: absolute;
@@ -509,6 +533,10 @@ html {
   margin: 0 auto;
   max-width: 430px;
   height: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 25%;
 }
 .hero__img img {
   width: 100%;
@@ -543,6 +571,7 @@ html {
 
 /* Styles for the Welcome Section */
 .welcome {
+  margin: 100px 0;
   /* Container */
   /* Wrapper for content */
   /* Info block */
@@ -559,6 +588,11 @@ html {
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
+}
+@media (max-width: 767px) {
+  .welcome__wrapper {
+    flex-direction: column;
+  }
 }
 .welcome__info {
   flex: 1;
@@ -614,6 +648,7 @@ html {
 
 /* Styles for the Featured Section */
 .featured {
+  margin: 100px 0;
   /* Container */
   /* Wrapper for content */
 }
@@ -693,6 +728,8 @@ html {
 
 /* Styles for the About Us Section */
 .about-us {
+  margin: 100px 0;
+  padding: 100px 0;
   /* Container */
   /* Wrapper for content */
   /* Top section */
@@ -730,10 +767,21 @@ html {
   justify-content: center;
   gap: 1.5rem;
 }
+@media (max-width: 767px) {
+  .about-us__bottom {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .about-us__bottom .about-us__product-card {
   flex: 1 1 calc(33.333% - 1rem);
   max-width: 275px;
   text-align: center;
+}
+@media (min-width: 768px) {
+  .about-us__bottom .about-us__product-card:nth-child(2) {
+    transform: translateY(80px);
+  }
 }
 .about-us__bottom .about-us__product-card img {
   width: 100%;
@@ -744,6 +792,7 @@ html {
 
 /* Styles for the Our Values Section */
 .our-values {
+  margin: 100px 0;
   /* Container */
   /* Wrapper for steps */
   /* Individual step */
@@ -763,9 +812,13 @@ html {
 }
 .our-values__wrapper {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   gap: 2rem;
+}
+@media (max-width: 767px) {
+  .our-values__wrapper {
+    flex-wrap: wrap;
+  }
 }
 .our-values__step {
   flex: 1 1 calc(33.333% - 1rem);
@@ -786,6 +839,11 @@ html {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 767px) {
+  .our-values__step-divider--2 {
+    display: none;
+  }
+}
 .our-values__step-divider div {
   width: 50px;
   height: 2px;
@@ -794,6 +852,7 @@ html {
 
 /* Styles for the CTA Secondary Section */
 .cta-secondary {
+  margin: 100px 0;
   /* Container */
   /* Wrapper for content */
 }
@@ -854,6 +913,7 @@ html {
 
 /* Styles for the CTA Primary Section */
 .cta-primary {
+  margin: 100px 0;
   /* Container */
   /* Wrapper for content */
   /* Info block */
@@ -869,6 +929,11 @@ html {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+}
+@media (max-width: 467px) {
+  .cta-primary__wrapper {
+    flex-direction: column;
+  }
 }
 .cta-primary__info {
   flex: 1;
@@ -898,6 +963,7 @@ html {
 }
 .cta-primary__form {
   flex: 1;
+  width: -webkit-fill-available;
   /* Top section of the form */
   /* Message input styling */
   /* Submit button styling */
@@ -906,6 +972,11 @@ html {
   display: flex;
   gap: 1rem;
   margin-bottom: 1rem;
+}
+@media (max-width: 567px) {
+  .cta-primary__form--top {
+    flex-direction: column;
+  }
 }
 .cta-primary__form--top input {
   flex: 1;
