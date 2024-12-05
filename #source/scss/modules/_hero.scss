@@ -1,7 +1,21 @@
 /* Styles for the Hero Section */
 .hero {
-  height: calc(100vh - 180px);
+  background: #eeedea;
+  position: relative;
+  height: calc(100vh - 75px);
+  overflow: hidden;
 
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 41px;
+    display: flex;
+    width: 100%;
+    height: 536px;
+    background: linear-gradient(180deg, rgba(243, 242, 238, 0) 0%, #eeedea 100%);
+  }
+
+  // background: linear-gradient(180deg, rgba(243, 242, 238, 0) 0%, #eeedea 100%);
     // container
     .container {
       height: 100%;
@@ -20,29 +34,72 @@
   
     /* Title styling */
     &__title {
-      font-size: 3rem;
-      font-weight: bold;
-      line-height: 1.2;
-      margin-bottom: 1rem;
+      font-weight: 400;
+      font-size: 119px;
+      line-height: 124%;
+      letter-spacing: 0.01em;
+      color: #282826;
+      font-family: var(--second-family);
 
-      display: flex;
+      z-index: 20;
+     
+
+      height: fit-content;
+
+      position: relative;
+
+     
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 120%;
+        left: 0;
+        width: 600px;
+        height: 2px;
+        background: linear-gradient(90deg, rgba(137,132,129,1) 0%, rgba(255,255,255,0.1) 100%);
+      }
   
       br {
         display: block;
       }
+      
     }
   
     /* Subtitle styling */
     &__subtitle {
-      font-size: 1.25rem;
-      color: #666;
-      margin-bottom: 2rem;
+      font-family: var(--second-family);
+      font-weight: 400;
+      font-size: 25px;
+      letter-spacing: 0.4em;
+      text-transform: uppercase;
+      color: #282826;
       
       display: flex;
       align-items: flex-end;
 
-      max-width: 270px;
+      height: fit-content;
+
+      max-width: 470px;
       text-align: left;
+
+      margin-top: auto;
+      margin-bottom: 200px;
+
+      position: relative;
+
+      z-index: 20;
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 140%;
+        left: 0;
+        width: 500px;
+        height: 2px;
+        background: linear-gradient(90deg, rgba(137,132,129,1) 0%, rgba(255,255,255,0.1) 100%);
+        transform: rotate(180deg);
+      }
     }
   
     /* Background image styling */
@@ -64,13 +121,13 @@
     /* Main image styling */
     &__img {
       margin: 0 auto;
-      max-width: 430px;
+      max-width:  665px;
       height: auto;
       position: absolute;
 
       left: 0;
       right: 0;
-      top: 25%;
+      top: 10%;
   
       img {
         width: 100%;
@@ -86,30 +143,51 @@
   
       /* Position for each star */
       &.hero__star-1 {
-        top: 10%;
-        left: 15%;
-        width: 70px;
-        height: 70px;
+        top: 45%;
+        right: 10%;
+        
+        z-index: 15;
       }
   
       &.hero__star-2 {
-        top: 50%;
-        right: 20%;
-        width: 32px;
-        height: 32px;
+        top: 25%;
+        right: 5%;
+        
+        z-index: 15;
       }
   
       &.hero__star-3 {
         bottom: 15%;
         left: 10%;
-        width: 70px;
-        height: 70px;
+        
+        z-index: 15;
       }
   
       img {
         width: 100%;
         height: auto;
       }
+    }
+
+    &__cloud-1 {
+      position: absolute;
+      right: 0;
+      top: 50%;
+      mix-blend-mode: screen;
+      z-index: 10;
+        img {
+          mix-blend-mode: screen;
+        }
+    }
+    &__cloud-2 {
+      position: absolute;
+      top: 0;
+      left: -300px;
+      mix-blend-mode: screen;
+      z-index: 10;
+        img {
+          mix-blend-mode: screen;
+        }
     }
   }
   

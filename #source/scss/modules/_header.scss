@@ -1,13 +1,16 @@
 /* Styles for the Header Section */
 .header {
+  background: #eeedea;
+  border-bottom: 1px solid #000;
+  z-index: 20;
     /* Navigation */
     &__nav {
       display: flex;
       justify-content: space-between;
       align-items: center;
       padding: 1rem 2rem;
-      background-color: #fff;
-      border-bottom: 1px solid #ddd;
+      background: #eeedea;
+      
     }
   
     /* Menu styling */
@@ -28,9 +31,15 @@
   
         .header__link {
           text-decoration: none;
-          color: #333;
+          font-family: var(--second-family);
+          font-weight: 400;
+          font-size: 15px;
+          letter-spacing: 0.4em;
+          color: #282826;
           transition: color 0.3s ease;
   
+          text-transform: uppercase;
+
           &:hover {
             color: #007bff;
           }

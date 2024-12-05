@@ -1,18 +1,50 @@
 /* Styles for the Our Values Section */
 .our-values {
-    margin: 100px 0;
+    padding: 100px 0;
+    background: #dedede;
+
+    position: relative;
+
+    overflow: hidden;
+
+    &__cloud {
+      &-1 {
+        position: absolute;
+        mix-blend-mode: screen;
+        left: 0;
+        bottom: -70%;
+
+          img {
+            mix-blend-mode: screen;
+          }
+      }
+      &-2 {
+        position: absolute;
+        mix-blend-mode: screen;
+        right: 0;
+            bottom: -209px;
+
+          img {
+            mix-blend-mode: screen;
+          }
+      }
+    }
 
     /* Container */
     .container {
-      max-width: 1200px;
+      
       margin: 0 auto;
       padding: 0 15px;
   
       /* Title styling */
       .our-values__title {
-        font-size: 2.5rem;
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 25px;
+        letter-spacing: 0.4em;
+        text-transform: uppercase;
         text-align: center;
-        font-weight: bold;
+        color: #282826;
         margin-bottom: 2rem;
       }
     }
@@ -23,6 +55,9 @@
       
       justify-content: space-between;
       gap: 2rem;
+      
+      position: relative;
+      z-index: 10;
 
       @media (max-width:767px) {
         flex-wrap: wrap;
@@ -33,17 +68,38 @@
     &__step {
       flex: 1 1 calc(33.333% - 1rem);
       text-align: center;
+
+      &--title {
+        &-1 {
+          font-family: var(--font-family);
+        }
+        &-2 {
+          font-family: var(--third-family);
+        }
+        &-3 {
+          font-family: var(--font-family);
+        }
+      }
   
       h3 {
-        font-size: 1.5rem;
-        font-weight: bold;
+        font-weight: 400;
+        font-size: 65px;
+        line-height: 92%;
+        letter-spacing: 0.01em;
+        text-align: center;
+        color: #282826;
         margin-bottom: 1rem;
       }
   
       p {
-        font-size: 1rem;
-        color: #666;
-        line-height: 1.5;
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 156%;
+        letter-spacing: 0.02em;
+        color: #282826;
+
+        text-align: left;
       }
     }
     
@@ -60,9 +116,9 @@
       }
   
       div {
-        width: 50px;
+        width: 200px;
         height: 2px;
-        background-color: #ccc;
+        background: radial-gradient(circle, rgba(255,255,255,0.3029586834733894) 50%, rgba(137,132,129,1) 100%);
       }
     }
   }

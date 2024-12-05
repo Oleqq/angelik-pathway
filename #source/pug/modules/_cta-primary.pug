@@ -2,14 +2,29 @@ section.cta-primary
     .container
         .cta-primary__wrapper 
             .cta-primary__info 
-                h3.cta-primary__title Transform<br>Your<br><strong>vision</strong>
+                h3.cta-primary__title transform<br>your<br><i>vision</i>
                 p.cta-primary__subtitle Collaborations are by invitation only. However, if you are interested you can try your luck.
 
-                img.cta-primary__star(src="https://via.placeholder.com/70x70", alt="")
+                .cta-primary__star
+                    <svg width="108" height="107" viewBox="0 0 108 107" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_154_132)">
+                            <path d="M34.517 57.819C41.9484 59.9297 47.0493 64.8008 49.2005 72.2209C50.8139 77.7901 51.8406 99.7584 53.1281 105.409C53.2422 105.928 53.3726 106.432 53.5029 106.984C54.7741 101.301 55.8986 79.5599 57.2838 74.1206C58.2943 70.1102 60.1521 66.4407 63.1019 63.4206C67.3717 59.0367 72.9452 57.3156 78.6655 56.0167C82.8701 55.0587 103.437 54.3768 108 53.5162C107.43 53.4026 107.201 53.3539 106.973 53.3052C100.927 51.9738 78.5188 50.9021 72.5704 49.246C65.4975 47.2813 60.5595 42.6539 58.2454 35.6396C56.9579 31.759 56.0453 27.7486 55.1 23.7706C54.5134 21.3351 54.1874 2.59788 53.7148 -0.0324707C52.411 5.78028 51.3191 27.6024 49.8687 33.0904C47.7664 41.014 42.9588 46.778 34.9407 49.181C28.7967 51.0158 6.16025 52.2498 0 53.7273C0.570394 53.8247 1.53191 53.9546 2.46084 54.1657C7.72476 55.351 29.3345 56.3252 34.517 57.7865V57.819Z" fill="url(#paint0_linear_154_132)" />
+                        </g>
+                        <defs>
+                            <linearGradient id="paint0_linear_154_132" x1="54" y1="-0.0324707" x2="54" y2="106.984" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#625D5A" />
+                            <stop offset="0.45" stop-color="#EEEEEE" />
+                            <stop offset="1" stop-color="#898481" />
+                            </linearGradient>
+                            <clipPath id="clip0_154_132">
+                            <rect width="108" height="107" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
             .cta-primary__form
                 .cta-primary__form--top 
                     input(type="name", placeholder="Name")
                     input(type="email", placeholder="Email")
 
-                input(type="text", placeholder="Message", name="Message")
+                textarea(placeholder="Message", name="Message", rows="6" )
                 button(type="submit") SUBMIT

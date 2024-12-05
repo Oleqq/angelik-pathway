@@ -1,8 +1,11 @@
 /* Styles for the Title Banner Section */
 .title-banner {
+  border-top: 2px solid #898481;
+  border-bottom: 2px solid #898481;
+  background: #eeedea;
     /* Container */
     .container {
-      max-width: 1200px;
+      
       margin: 0 auto;
       padding: 0 15px;
     }
@@ -13,11 +16,15 @@
       padding: 2rem 0;
   
       .title-banner__title {
-        font-size: 2rem;
-        font-weight: bold;
-        color: #333;
-        line-height: 1.4;
+        font-family: var(--third-family);
+        font-weight: 500;
+        font-size: 84px;
+        line-height: 124%;
+        letter-spacing: 0.01em;
+        color: #898481;
         quotes: '" "';
+
+        margin: 0;
       }
     }
   }
