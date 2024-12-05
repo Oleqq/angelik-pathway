@@ -147,6 +147,15 @@
         right: 10%;
         
         z-index: 15;
+        transition: 1s ease;
+        opacity: 0;
+        transform: translateY(100px);
+
+        &.active {
+          transition: 1s ease;
+          opacity: 1;
+          transform: translateY(0);
+        }
       }
   
       &.hero__star-2 {
@@ -154,6 +163,15 @@
         right: 5%;
         
         z-index: 15;
+        transition: 1s ease;
+        opacity: 0;
+        transform: translateY(100px);
+
+        &.active {
+          transition: 1s ease;
+          opacity: 1;
+          transform: translateY(0);
+        }
       }
   
       &.hero__star-3 {
@@ -161,6 +179,15 @@
         left: 10%;
         
         z-index: 15;
+        transition: 2s ease;
+        opacity: 0;
+        transform: translateY(100px);
+
+        &.active {
+          transition: 2s ease;
+          opacity: 1;
+          transform: translateY(0);
+        }
       }
   
       img {
@@ -175,6 +202,16 @@
       top: 50%;
       mix-blend-mode: screen;
       z-index: 10;
+      transition: 1.5s ease-out;
+
+      transform: translateX(100px);
+
+      &.active {
+        transition: 1.5s ease-out;
+
+        transform: translateX(0);
+      }
+
         img {
           mix-blend-mode: screen;
         }
@@ -185,6 +222,15 @@
       left: -300px;
       mix-blend-mode: screen;
       z-index: 10;
+      transition: 1.5s ease-out;
+      transform: translateX(-200px);
+
+      &.active {
+        transition: 1.5s ease-out;
+
+        transform: translateX(0);
+      }
+
         img {
           mix-blend-mode: screen;
         }

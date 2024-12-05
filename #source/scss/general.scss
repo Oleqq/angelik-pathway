@@ -31,3 +31,19 @@ html {
     }
 }
 
+body {
+    background: #eeedea;
+}
+
+/* animation */
+section {
+    opacity: 0;
+    transition: 1s ease;
+    transform: translateY(50px);
+}
+section.animated {
+    
+    opacity: 1;
+    transition: 1s ease;
+    transform: translateY(0px);
+}

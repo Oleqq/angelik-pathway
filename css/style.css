@@ -369,6 +369,23 @@ html {
   }
 }
 
+body {
+  background: #eeedea;
+}
+
+/* animation */
+section {
+  opacity: 0;
+  transition: 1s ease;
+  transform: translateY(50px);
+}
+
+section.animated {
+  opacity: 1;
+  transition: 1s ease;
+  transform: translateY(0px);
+}
+
 /* Styles for the Header Section */
 .header {
   background: #eeedea;
@@ -564,16 +581,40 @@ html {
   top: 45%;
   right: 10%;
   z-index: 15;
+  transition: 1s ease;
+  opacity: 0;
+  transform: translateY(100px);
+}
+.hero__star-1.hero__star-1.active, .hero__star-2.hero__star-1.active, .hero__star-3.hero__star-1.active {
+  transition: 1s ease;
+  opacity: 1;
+  transform: translateY(0);
 }
 .hero__star-1.hero__star-2, .hero__star-2.hero__star-2, .hero__star-3.hero__star-2 {
   top: 25%;
   right: 5%;
   z-index: 15;
+  transition: 1s ease;
+  opacity: 0;
+  transform: translateY(100px);
+}
+.hero__star-1.hero__star-2.active, .hero__star-2.hero__star-2.active, .hero__star-3.hero__star-2.active {
+  transition: 1s ease;
+  opacity: 1;
+  transform: translateY(0);
 }
 .hero__star-1.hero__star-3, .hero__star-2.hero__star-3, .hero__star-3.hero__star-3 {
   bottom: 15%;
   left: 10%;
   z-index: 15;
+  transition: 2s ease;
+  opacity: 0;
+  transform: translateY(100px);
+}
+.hero__star-1.hero__star-3.active, .hero__star-2.hero__star-3.active, .hero__star-3.hero__star-3.active {
+  transition: 2s ease;
+  opacity: 1;
+  transform: translateY(0);
 }
 .hero__star-1 img, .hero__star-2 img, .hero__star-3 img {
   width: 100%;
@@ -585,6 +626,12 @@ html {
   top: 50%;
   mix-blend-mode: screen;
   z-index: 10;
+  transition: 1.5s ease-out;
+  transform: translateX(100px);
+}
+.hero__cloud-1.active {
+  transition: 1.5s ease-out;
+  transform: translateX(0);
 }
 .hero__cloud-1 img {
   mix-blend-mode: screen;
@@ -595,6 +642,12 @@ html {
   left: -300px;
   mix-blend-mode: screen;
   z-index: 10;
+  transition: 1.5s ease-out;
+  transform: translateX(-200px);
+}
+.hero__cloud-2.active {
+  transition: 1.5s ease-out;
+  transform: translateX(0);
 }
 .hero__cloud-2 img {
   mix-blend-mode: screen;
