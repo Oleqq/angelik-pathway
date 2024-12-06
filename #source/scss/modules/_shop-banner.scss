@@ -1,0 +1,24 @@
+.shop-banner {
+    background-color: #282826;
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 12px;
+        
+    }
+
+    h5 {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 13px !important;
+        letter-spacing: 0.2em;
+        color: #fff;   
+
+        margin: 0;
+
+        @media (max-width:467px) {
+            font-size: 11px;
+        }
+    }
+}

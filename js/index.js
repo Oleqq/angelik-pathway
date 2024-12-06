@@ -22,9 +22,38 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
 
-
-
   document.addEventListener("DOMContentLoaded", () => {
+    const burger = document.querySelector(".burger__menu");
+    const menu = document.querySelector(".header__menu");
+
+    burger.addEventListener("click", () => {
+        burger.classList.toggle("active");
+        menu.classList.toggle("active");
+    });
+});
+
+
+
+
+// hero animations
+document.addEventListener("DOMContentLoaded", () => {
+    const heroTitle = document.querySelector(".hero__title");
+    const heroSubtitle = document.querySelector(".hero__subtitle");
+
+    
+    const elements = [heroTitle, heroSubtitle];
+
+   
+    elements.forEach((element, index) => {
+        setTimeout(() => {
+            element.classList.add("active");
+        }, index * 500); 
+    });
+
+
+
+});
+document.addEventListener("DOMContentLoaded", () => {
     const cloud1 = document.querySelector(".hero__cloud-1");
     const cloud2 = document.querySelector(".hero__cloud-2");
     const star1 = document.querySelector(".hero__star-1");

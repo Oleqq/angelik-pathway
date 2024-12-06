@@ -21,6 +21,33 @@ html {
 }
 
 
+body {
+    --sb-track-color: #eeedea;
+    --sb-thumb-color: #898481;
+    --sb-size: 4px;
+  }
+  
+  body::-webkit-scrollbar {
+    width: var(--sb-size)
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+    border-radius: 1px;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+    border-radius: 1px;
+    
+  }
+  
+  @supports not selector(::-webkit-scrollbar) {
+    body {
+      scrollbar-color: var(--sb-thumb-color)
+                       var(--sb-track-color);
+    }
+  }
 
 .container {
     @media (min-width: 1200px) and (max-width: 1920px) {
@@ -40,10 +67,17 @@ section {
     opacity: 0;
     transition: 1s ease;
     transform: translateY(50px);
+
+    &.hero {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 section.animated {
     
     opacity: 1;
     transition: 1s ease;
     transform: translateY(0px);
+
+
 }

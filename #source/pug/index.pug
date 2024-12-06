@@ -11,32 +11,39 @@ html(lang="en")
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
   body
+    
+    //- Shop Banner
+    include modules/_shop-banner.pug
 
-  //- Header
-  include modules/_header.pug
+    //- Header
+    include modules/_header.pug
 
-  //- Hero
-  include modules/_hero.pug
+    main 
+      //- Hero
+      include modules/_hero.pug
 
-  //- Welcome
-  include modules/_welcome.pug
+      //- Welcome
+      include modules/_welcome.pug
 
-  //- Featured
-  include modules/_featured.pug
+      //- Featured
+      include modules/_featured.pug
 
-  //- Title Banner
-  include modules/_title-banner.pug
+      //- Title Banner
+      include modules/_title-banner.pug
 
-  //- About Us
-  include modules/_about.pug
+      //- About Us
+      include modules/_about.pug
 
-  //- Our Values
-  include modules/_our-values.pug
+      //- Our Values
+      include modules/_our-values.pug
 
-  //- Cta Contact
-  include modules/_cta-secondary.pug
+      //- Cta Contact
+      include modules/_cta-secondary.pug
 
-  //- Cta Primary
-  include modules/_cta-primary.pug
+      //- Cta Primary
+      include modules/_cta-primary.pug
+
+    //- Footer
+    include modules/_footer.pug
 
   script(src="./js/index.js") 

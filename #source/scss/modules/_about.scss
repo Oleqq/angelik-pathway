@@ -1,9 +1,13 @@
 /* Styles for the About Us Section */
 .about-us {
- 
+  overflow: hidden;
   padding: 100px 0;
   position: relative;
   background: #eeedea;
+
+  @media (max-width:767px) {
+    padding: 56px 0 32px;
+  }
 
     &__cloud {
       &-1  {
@@ -63,6 +67,33 @@
           font-family: var(--third-family);
           font-weight: 500;
           font-size: 72px;
+
+          @media (max-width:1440px) {
+            font-size: 52px;
+            font-family: var(--second-family);
+          }
+          @media (max-width:991px) {
+            font-size: 42px;
+          }
+          @media (max-width:767px) {
+            font-size: 32px;
+          }
+          @media (max-width:390px) {
+            font-size: 28px;
+          }
+        }
+
+        @media (max-width:1440px) {
+          font-size: 52px;
+        }
+        @media (max-width:991px) {
+          font-size: 42px;
+        }
+        @media (max-width:767px) {
+          font-size: 32px;
+        }
+        @media (max-width:390px) {
+          font-size: 28px;
         }
       }
   
@@ -79,6 +110,16 @@
 
         max-width: 1000px;
         margin: 0 auto;
+
+        @media (max-width:1440px) {
+          font-size: 28px;
+        }
+        @media (max-width:991px) {
+          font-size: 24px;
+        }
+        @media (max-width:767px) {
+          font-size: 20px;
+        }
       }
     }
   
@@ -92,9 +133,14 @@
       z-index: 10;
       padding: 0 0 110px;
 
+      @media (max-width:1024px) {
+        
+      }
+
       @media (max-width:767px) {
         flex-direction: column;
         align-items: center;
+        padding: 0;
       }
 
      

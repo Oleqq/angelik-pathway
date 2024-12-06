@@ -1,6 +1,11 @@
 section.cta-secondary
-    .cta-secondary__bg 
-        img(src="./img/Rectangle 12.jpg", alt="")
+    <picture class="cta-secondary__bg">
+        
+        <source srcset="./img/Rectangle-12-mobile.jpg" media="(max-width: 767px)">
+        
+        <img src="./img/Rectangle 12.jpg" alt="">
+    </picture>
+
     .container 
         .cta-secondary__wrapper 
             h3.cta-secondary__title Are you ready to begin <i>a new path?</i>
