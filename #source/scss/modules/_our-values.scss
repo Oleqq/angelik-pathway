@@ -1,6 +1,6 @@
 /* Styles for the Our Values Section */
 .our-values {
-    padding: 100px 0;
+    padding: 126px 0 167px;
     background: #dedede;
 
     position: relative;
@@ -9,6 +9,9 @@
 
     @media (max-width:467px) {
       padding: 64px 0 125px;
+    }
+    @media (max-width:390px) {
+      padding: 48px 0 109px;
     }
 
     &__cloud {
@@ -78,6 +81,13 @@
         }
       }
     }
+
+    &__title {
+      
+      @media (max-width:390px) {
+        margin-bottom: 4px;
+      }
+    }
   
     /* Wrapper for steps */
     &__wrapper {
@@ -94,6 +104,10 @@
       }
       @media (max-width:467px) {
         flex-direction: column;
+      }
+      @media (max-width:390px) {
+        gap: 0rem;
+        padding: 66px 0;
       }
     }
   
@@ -146,6 +160,7 @@
         }
         @media (max-width:390px) {
           font-size: 35px;
+          
         }
       }
   
@@ -196,4 +211,56 @@
       }
     }
   }
+
+
+/* pixel perfect FOR 1920x1080 ONLY */
+  @media (width:1920px) {
+    .our-values__step-1 h3 {
+      margin: 43px 0 0 69px;
+    }
+    .our-values__step-1 p {
+      margin: 43px 0 0 69px;
+      max-width: 72%;
+    }
+    .our-values__step-2 h3 {
+      margin: 46px 0 0 -93px;
+    }
+    .our-values__step-2 p {
+      margin: 38px 0 0 -28px;
+    }
+    .our-values__step-3 h3 {
+      margin: 43px 0 0 -127px;
+    }
+    .our-values__step-3 p {
+      margin: 43px 0 0 -76px;
+    }
+
+    section.our-values > div.container > div > div:nth-child(2) {
+      div {
+        width: 171px;
+        height: 2px;
+        position: relative;
+        top: -41px;
+        right: 2px;
+      }
+    }
+    .our-values__step-divider--2 {
+      div {
+        width: 232px;
+        position: relative;
+        top: -41px;
+        left: -47px;
+      }
+    }
+  }
   
+ /* pixel perfect FOR 345px ONLY */
+ @media(max-width:390px) {
+  .our-values__wrapper {
+    gap: 34px;
+  }
+  .our-values__step p {
+    max-width: 95%;
+  }
+
+ }

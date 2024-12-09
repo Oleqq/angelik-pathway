@@ -47,6 +47,11 @@
       flex-direction: column;
       gap: 32px;
       
+      @media (max-width:390px) {
+        gap: 16px;
+        margin-top: 38px;
+        margin-bottom: 0;
+      }
   
       li {
         margin-bottom: 10px;
@@ -87,6 +92,10 @@
             color: #a2a3a6;
 
             margin: 4px 0;
+
+            @media (max-width:390px) {
+              line-height: 30px;
+            }
         }
       }
     }
@@ -122,6 +131,11 @@
       @media (max-width:1199px) {
         padding: 30px 24px;
       }
+      @media (max-width:390px) {
+        padding: 77px 23px 36px;
+        max-width: 85%;
+        line-height: 27px;
+      }
   
       p {
         font-family: var(--font-family);
@@ -135,3 +149,8 @@
     }
   }
   
+  body > footer > div > div.footer__wrapper > ul:nth-child(3) {
+    @media (max-width:390px) {
+      gap: 54px;
+    }
+  }

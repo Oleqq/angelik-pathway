@@ -2,13 +2,18 @@
 .hero {
   background: #eeedea;
   position: relative;
-  height: calc(100vh - 75px);
+  // height: calc(100vh - 75px);
+  height: calc(100vh - 135px);
   overflow: hidden;
+
+  @media (max-width:419px) {
+    height: calc(100vh - 200px);
+  }
 
   &::after {
     content: '';
     position: absolute;
-    bottom: 41px;
+    bottom: 0;
     display: flex;
     width: 100%;
     height: 536px;
@@ -17,6 +22,10 @@
     @media (max-height:899px) {
       height: 100%;
       bottom: 0;
+    }
+    @media (max-width:419px) {
+      bottom: 130px;
+      mix-blend-mode: lighten;
     }
   }
 
@@ -54,7 +63,7 @@
       font-family: var(--second-family);
 
       z-index: 20;
-     
+      
 
       height: fit-content;
 
@@ -66,6 +75,10 @@
 
       
 
+      @media (min-width:768px) {
+        margin: 150px 0;
+      }
+
       &.active {
         transition: 2s ease;
         transform: translateX(0);
@@ -74,7 +87,8 @@
       &::after {
         content: '';
         position: absolute;
-        top: 120%;
+        // top: 120%;
+        top: 118%;
         left: 0;
         width: 600px;
         height: 2px;
@@ -102,6 +116,10 @@
       @media (max-width:567px) {
         font-size: 52px;
       }
+      @media (max-width:350px) {
+        margin: 26px 0px;
+        font-size: 49px;
+      }
       
     }
   
@@ -119,7 +137,9 @@
 
       height: fit-content;
 
-      max-width: 470px;
+      // max-width: 470px;
+      max-width: 513px;
+
       text-align: left;
 
       margin-top: auto;
@@ -140,7 +160,8 @@
       &::after {
         content: '';
         position: absolute;
-        bottom: 140%;
+        // bottom: 140%;
+        bottom: 132%;
         left: 0;
         width: 500px;
         height: 2px;
@@ -159,6 +180,14 @@
       }
       @media (max-width:467px) {
         margin-bottom: 100px;
+      }
+      @media (max-width:419px) {
+        margin-bottom: 66px;
+        
+      }
+      @media (max-width:350px) {
+        letter-spacing: 6px;
+        font-size: 16px;
       }
     }
   
@@ -208,6 +237,7 @@
       @media (max-width:390px) {
         width: 204px;
         height: 240px;
+        top: 20%;
       }
   
       img {
@@ -224,8 +254,11 @@
   
       /* Position for each star */
       &.hero__star-1 {
-        top: 45%;
-        right: 10%;
+        // top: 45%;
+        // right: 10%;
+
+        top: 41%;
+        right: 14%;
         
         z-index: 15;
         transition: 1s ease;
@@ -243,8 +276,11 @@
       }
   
       &.hero__star-2 {
-        top: 25%;
-        right: 5%;
+        // top: 25%;
+        // right: 5%;
+
+        top: 24%;
+        right: 9%;
         
         z-index: 15;
         transition: 1s ease;
@@ -262,9 +298,12 @@
       }
   
       &.hero__star-3 {
-        bottom: 15%;
-        left: 10%;
+        // bottom: 15%;
+        // left: 10%;
         
+        bottom: 11%;
+        left: 7%;
+
         z-index: 15;
         transition: 2s ease;
         opacity: 0;

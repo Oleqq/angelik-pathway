@@ -1,0 +1,213 @@
+/* ### ~~~ STYLE FIXES ### ~~~ */
+/* ~~~~~~~~~~~~~~~~~~ NEW ~~~~~~~~~~~~~~~~ */
+
+section.cta-secondary > button {
+	transition: .2s ease;
+}
+
+section.cta-secondary > button:hover {
+	transition: .2s ease !important;
+	background-color: #282826 !important;
+    color: #fff;
+}
+
+section.cta-primary > button {
+	transition: .2s ease;
+}
+
+section.cta-primary > button:hover {
+	transition: .2s ease;
+	background-color: #fff !important;
+    color: #282826 !important;
+}
+
+body > main > section.cta-secondary > div > div > div > input[type=email]:focus-visible {
+	outline-color: transparent;
+	border: none;
+}
+input[type="email"]:focus-visible {
+    outline: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media(width:1920px) {
+	.title-banner__title {
+		text-align: left;
+		margin-left: 85px !important;
+		letter-spacing: 1px !important;
+	}
+}
+
+.featured__title > i {
+	    font-family: var(--third-family);
+}
+
+.featured__wrapper h3:last-of-type {
+    
+    margin: 3.5rem 0 0;
+}
+
+
+.footer__info .footer__logo {
+        margin-bottom: 42px;
+}
+.footer__wrapper {
+    padding: 0px 0;
+}
+.footer__nav {
+    gap: 19px;
+    margin-top: 48px;
+}
+.footer__address {
+	margin-top: 48px;
+}
+.footer__address .footer__address-text {
+    margin-bottom: 46px;
+}
+
+
+.our-values__step--title-1 {
+	text-transform: uppercase;
+}
+
+@media (width:1920px) {
+	body > footer > div > div.footer__wrapper > ul:nth-child(3) {
+		width: 205px;
+	}
+	body > footer > div > div.footer__wrapper > ul:nth-child(2) {
+		width: 103px;
+	}
+	body > footer > div > div.footer__wrapper > div.footer__address {
+		    width: 605px;
+	}
+	.footer__address .footer__address-text p {
+		margin: 0;
+	}
+	.footer {
+    padding: 54px 0 69px;
+	}
+	.footer__bottom {
+    padding-top: 45px;
+	}
+}
+@media (max-width:567px) {
+	.footer__wrapper {
+		padding: 0 22px;
+		
+	}
+	.welcome__path h3 {
+        font-size: 35px !important;
+		    max-width: 70%;
+   			margin: 0 auto;
+    }
+	.welcome__path p {
+        font-size: 24px !important;
+    }
+}
+@media (max-width:390px) {
+	.welcome .container {
+        height: 1000px;
+    }
+	.welcome__path {
+		height: 41%;
+    }
+	.welcome__title {
+		font-size: 24px !important;
+	}
+	.welcome__subtitle {
+		line-height: 22px;
+	}
+	body > main > section.featured.animated > div.container > div > h3:nth-child(4) {
+
+		 font-size: 22px !important;
+		max-width: 70% !important;
+		margin: 22px auto !important;
+		line-height: 27px !important;
+	}
+	.featured__wrapper .featured__img {
+		border-radius: 0;
+    	max-width: 90%;
+	}
+	.featured__title i {
+		font-family: var(--second-family);
+	}
+	    .featured__wrapper .featured__subtitle {
+               font-size: 16px;
+        max-width: 84%;
+        margin: 14px auto;
+    }
+	#about-us > div.container > div > div.about-us__top > div.section__title {
+		    margin-bottom: 16px;
+	}
+	#about-us > div.container > div > div.about-us__top > div.section__subtitle {
+		    max-width: 75%;
+			text-align: center;
+			line-height: 22px;
+		font-size: 16px;
+	}
+	.our-values {
+        padding: 48px 0 91px;
+    }
+	 .our-values__step h3 {
+        
+        margin: 18px 0;
+		 font-size: 28px;
+		 
+    }
+	.our-values__step--title-1 {
+		    margin: 18px 0 14px;
+	}
+	.our-values__step--title-2 {
+			    margin: 28px 0 0px;
+		    font-family: var(--font-family);
+			font-style: italic;
+			font-size: 34px !important;
+	}
+	.our-values__step--title-3 {
+            margin: 6px 0;
+	}
+	.our-values__wrapper {
+        gap: 55px;
+        
+    }
+	.our-values__step--title-3 {
+		margin: 0;
+	}
+	.our-values__step--title-1 {
+		margin: 0;
+	}
+	.our-values__wrapper {
+		padding: 0;
+	}
+	.our-values__step p {
+		font-size: 16px;
+	}
+	
+	.footer__info p {
+		font-size: 15px;
+		margin: 13px 14px 0px 10px;
+		line-height: 30px;
+	}
+	.footer__address .footer__address-text p {
+		margin: 0;
+	}
+	.footer__address {
+    	margin-top: 24px;
+	}
+	body > footer > div > div.footer__wrapper > div.footer__info > div > svg {
+		width: 112px;
+    	margin-left: 22px;
+	}
+	.footer__info .footer__logo {
+    	margin-bottom: 12px;
+	}
+}

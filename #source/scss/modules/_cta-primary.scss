@@ -1,7 +1,7 @@
 // cta primary
 /* Styles for the CTA Primary Section */
 .cta-primary {
-  padding: 62px 0;
+  padding: 52px 0 137px;
 
   background: #eeedea;
 
@@ -14,6 +14,10 @@
       
       margin: 0 auto;
       padding: 0 15px;
+
+      @media (max-width:390px) {
+        padding: 0 24px;
+      }
     }
   
     /* Wrapper for content */
@@ -31,7 +35,8 @@
   
     /* Info block */
     &__info {
-      flex: 1;
+      // flex: 1;
+      flex: .8;
       position: relative;
 
       .cta-primary__star {
@@ -39,9 +44,18 @@
         right: 50%;
         top: 33%;
 
+        @media (width:1920px) {
+          right: 37%;
+          top: 24%;
+        }
+
         @media (max-width:991px) {
           right: 22%;
           top: 23%;
+        }
+        @media (max-width:390px) {
+          right: 14%;
+          top: 23%;       
         }
       }
 
@@ -53,6 +67,7 @@
         line-height: 154%;
         letter-spacing: 0.01em;
         color: #282826;
+        margin: 9px 0;
 
         @media (max-width:991px) {
           font-size: 55px;
@@ -60,6 +75,9 @@
         }
         @media (max-width:567px) {
           font-size: 45px;
+        }
+        @media (max-width:390px) {
+          margin: 42px 0px 0;
         }
   
         i {
@@ -79,11 +97,19 @@
 
         max-width: 490px;
 
+        margin: 2rem 0;
+        line-height: 32px;
+
         @media (max-width:991px) {
           font-size: 24px;
         }
         @media (max-width:567px) {
           font-size: 20px;
+        }
+        @media (max-width:390px) {
+          line-height: 32px;
+          margin: 12px 0;
+          font-size: 18px;
         }
       }
   
@@ -99,14 +125,19 @@
     /* Form block */
     &__form {
       flex: 1;
-
+      
       width: -webkit-fill-available;
+
+      @media (min-width:1441px) {
+        margin-right: 113px;
+        margin-top: 92px;
+      }
   
       /* Top section of the form */
       &--top {
         display: flex;
-        gap: 1rem;
-        margin-bottom: 1rem;
+        gap: 2rem;
+        margin-bottom: 2rem;
 
         @media (max-width:567px) {
           flex-direction: column;
@@ -118,6 +149,10 @@
           border: 1px solid #282826;
           background-color: transparent;
           font-size: 1rem;
+
+          @media (max-width:390px) {
+            padding: 27px;
+          }
 
           &:focus-visible {
             outline: #282826;
@@ -141,7 +176,7 @@
         border: 1px solid #282826;
         padding-left: 24px;
         padding-top: 24px;
-        margin-bottom: 50px;
+        margin-bottom: 32px;
 
         &::placeholder {
           font-family: var(--font-family);
@@ -161,8 +196,9 @@
       /* Submit button styling */
       button {
         display: inline-block;
-        padding: 0.75rem 2.5rem;
+        padding: 1rem 4.5rem;
         background-color: #282826;
+        border: 1px solid #282826;
         color: #fff;
         border: none;
         
@@ -181,7 +217,9 @@
         }
   
         &:hover {
-          background-color: #282826;
+          transition: .2s ease;
+          background-color: #fff;
+          color: #282826;
         }
       }
     }
