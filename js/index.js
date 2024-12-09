@@ -79,3 +79,75 @@ document.addEventListener("DOMContentLoaded", () => {
         cloud2.style.transform = `translate(${x * -1}px, ${y * -1}px)`;
     });
 });
+
+
+
+
+
+
+// about cards animation
+document.addEventListener("DOMContentLoaded", () => {
+    const elements = document.querySelectorAll(".about-us__product-card");
+    const observerOptions = {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.2 
+    };
+
+    let animationDelay = 0; 
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                
+                setTimeout(() => {
+                    entry.target.classList.add("animated");
+                }, animationDelay);
+
+                
+                animationDelay += 300;
+
+                
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    
+    elements.forEach((element) => observer.observe(element));
+});
+
+
+//our values animation
+document.addEventListener("DOMContentLoaded", () => {
+    const allElements = document.querySelectorAll(
+        ".our-values__step, .our-values__step-divider"
+    ); 
+    const observerOptions = {
+        root: null, 
+        rootMargin: "0px",
+        threshold: 0.1,
+    };
+
+    let animationDelay = 0; 
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                
+                setTimeout(() => {
+                    entry.target.classList.add("animated");
+                }, animationDelay);
+
+                
+                animationDelay += 300;
+
+                
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    
+    allElements.forEach((element) => observer.observe(element));
+});
