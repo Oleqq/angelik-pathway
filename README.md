@@ -40,16 +40,16 @@ Angelik Pathway is a modern, responsive, and visually appealing corporate landin
 ---
 
 ## 📂 **Project Structure**  
-├───#php
-├───#source
-│   ├───pug
-│   │   └───modules
-│   └───scss
-│       └───modules
-├───css
-├───fonts
-├───img
-└───js
+  ├───#php
+  ├───#source
+  │   ├───pug
+  │   │   └───modules
+  │   └───scss
+  │       └───modules
+  ├───css
+  ├───fonts
+  ├───img
+  └───js
 
 ---
 
